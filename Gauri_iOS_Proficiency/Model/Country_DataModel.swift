@@ -14,6 +14,6 @@ struct Country_DataModel: Codable {
     
     enum CodingKeys: String, CodingKey {
         case title
-        case info = ""
+        case info = "rows"
     }
 }
