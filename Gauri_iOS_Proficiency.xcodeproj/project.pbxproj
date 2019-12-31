@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A6D36F01AA2FCF805417FC /* Pods_Gauri_iOS_Proficiency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B31EB6CD359A443C669C0A /* Pods_Gauri_iOS_Proficiency.framework */; };
+		52FAE2AF23B5E30A009CAD48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2AE23B5E30A009CAD48 /* AppDelegate.swift */; };
+		52FAE2B823B5E30A009CAD48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE2B723B5E30A009CAD48 /* Assets.xcassets */; };
+		52FAE2C623B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2C523B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests.swift */; };
+		52FAE2D123B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2D023B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests.swift */; };
+		52FAE2E123B5EBB3009CAD48 /* Supporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2E023B5EBB3009CAD48 /* Supporter.swift */; };
+		52FAE2E423B5ED27009CAD48 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2E323B5ED27009CAD48 /* AppConstant.swift */; };
+		52FAE2E823B5ED64009CAD48 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2E723B5ED64009CAD48 /* Webservice.swift */; };
+		52FAE2EF23B5ED98009CAD48 /* Country_InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2EB23B5ED98009CAD48 /* Country_InfoCell.swift */; };
+		52FAE2F023B5ED98009CAD48 /* Country_InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2EC23B5ED98009CAD48 /* Country_InfoViewController.swift */; };
+		52FAE2F123B5ED98009CAD48 /* Country_InfoVC-Extension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2ED23B5ED98009CAD48 /* Country_InfoVC-Extension+TableViewDataSource.swift */; };
+		52FAE2F223B5ED98009CAD48 /* Country_InfoVC-Extension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2EE23B5ED98009CAD48 /* Country_InfoVC-Extension+TableViewDelegate.swift */; };
+		52FAE2F523B5EDA3009CAD48 /* Country_InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2F323B5EDA2009CAD48 /* Country_InfoViewModel.swift */; };
+		52FAE2F623B5EDA3009CAD48 /* Country_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2F423B5EDA3009CAD48 /* Country_ViewModel.swift */; };
+		52FAE2FA23B5EE15009CAD48 /* Country_InfoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2F823B5EE15009CAD48 /* Country_InfoDataModel.swift */; };
+		52FAE2FB23B5EE15009CAD48 /* Country_DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE2F923B5EE15009CAD48 /* Country_DataModel.swift */; };
+		52FAE2FD23B5EF96009CAD48 /* avatar-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE2FC23B5EF96009CAD48 /* avatar-placeholder.png */; };
+		95FD27A57411B6EC49C7ADDB /* Pods_Gauri_iOS_ProficiencyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A1ACCC7DEF043F7640BFA9 /* Pods_Gauri_iOS_ProficiencyUITests.framework */; };
+		ECEC6B47CECA6DCA46406E44 /* Pods_Gauri_iOS_ProficiencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64876A6870308C63AFD8F764 /* Pods_Gauri_iOS_ProficiencyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52FAE2C223B5E30B009CAD48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FAE2A323B5E30A009CAD48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FAE2AA23B5E30A009CAD48;
+			remoteInfo = Gauri_iOS_Proficiency;
+		};
+		52FAE2CD23B5E30B009CAD48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FAE2A323B5E30A009CAD48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FAE2AA23B5E30A009CAD48;
+			remoteInfo = Gauri_iOS_Proficiency;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CB1A294D741F75AAA55C4A1 /* Pods-Gauri_iOS_ProficiencyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gauri_iOS_ProficiencyTests.debug.xcconfig"; path = "Target Support Files/Pods-Gauri_iOS_ProficiencyTests/Pods-Gauri_iOS_ProficiencyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		405084F46F91E12984E3D411 /* Pods-Gauri_iOS_ProficiencyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gauri_iOS_ProficiencyUITests.release.xcconfig"; path = "Target Support Files/Pods-Gauri_iOS_ProficiencyUITests/Pods-Gauri_iOS_ProficiencyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42BB7A3913386FAE2DB1C657 /* Pods-Gauri_iOS_Proficiency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gauri_iOS_Proficiency.debug.xcconfig"; path = "Target Support Files/Pods-Gauri_iOS_Proficiency/Pods-Gauri_iOS_Proficiency.debug.xcconfig"; sourceTree = "<group>"; };
+		4AD75F971B5C19629AC2AA57 /* Pods-Gauri_iOS_ProficiencyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gauri_iOS_ProficiencyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gauri_iOS_ProficiencyUITests/Pods-Gauri_iOS_ProficiencyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52FAE2AB23B5E30A009CAD48 /* Gauri_iOS_Proficiency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gauri_iOS_Proficiency.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FAE2AE23B5E30A009CAD48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52FAE2B723B5E30A009CAD48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52FAE2BC23B5E30A009CAD48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FAE2C123B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gauri_iOS_ProficiencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FAE2C523B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gauri_iOS_ProficiencyTests.swift; sourceTree = "<group>"; };
+		52FAE2C723B5E30B009CAD48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FAE2CC23B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gauri_iOS_ProficiencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FAE2D023B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gauri_iOS_ProficiencyUITests.swift; sourceTree = "<group>"; };
+		52FAE2D223B5E30B009CAD48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FAE2E023B5EBB3009CAD48 /* Supporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Supporter.swift; sourceTree = "<group>"; };
+		52FAE2E323B5ED27009CAD48 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		52FAE2E723B5ED64009CAD48 /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		52FAE2EB23B5ED98009CAD48 /* Country_InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country_InfoCell.swift; sourceTree = "<group>"; };
+		52FAE2EC23B5ED98009CAD48 /* Country_InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country_InfoViewController.swift; sourceTree = "<group>"; };
+		52FAE2ED23B5ED98009CAD48 /* Country_InfoVC-Extension+TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country_InfoVC-Extension+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		52FAE2EE23B5ED98009CAD48 /* Country_InfoVC-Extension+TableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country_InfoVC-Extension+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		52FAE2F323B5EDA2009CAD48 /* Country_InfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country_InfoViewModel.swift; sourceTree = "<group>"; };
+		52FAE2F423B5EDA3009CAD48 /* Country_ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country_ViewModel.swift; sourceTree = "<group>"; };
+		52FAE2F823B5EE15009CAD48 /* Country_InfoDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country_InfoDataModel.swift; sourceTree = "<group>"; };
+		52FAE2F923B5EE15009CAD48 /* Country_DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country_DataModel.swift; sourceTree = "<group>"; };
+		52FAE2FC23B5EF96009CAD48 /* avatar-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-placeholder.png"; sourceTree = "<group>"; };
+		64876A6870308C63AFD8F764 /* Pods_Gauri_iOS_ProficiencyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gauri_iOS_ProficiencyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A07CF2D7C89446C5A463DC09 /* Pods-Gauri_iOS_ProficiencyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gauri_iOS_ProficiencyTests.release.xcconfig"; path = "Target Support Files/Pods-Gauri_iOS_ProficiencyTests/Pods-Gauri_iOS_ProficiencyTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0A1ACCC7DEF043F7640BFA9 /* Pods_Gauri_iOS_ProficiencyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gauri_iOS_ProficiencyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B31EB6CD359A443C669C0A /* Pods_Gauri_iOS_Proficiency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gauri_iOS_Proficiency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC321D93027576E74D848F24 /* Pods-Gauri_iOS_Proficiency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gauri_iOS_Proficiency.release.xcconfig"; path = "Target Support Files/Pods-Gauri_iOS_Proficiency/Pods-Gauri_iOS_Proficiency.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52FAE2A823B5E30A009CAD48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A6D36F01AA2FCF805417FC /* Pods_Gauri_iOS_Proficiency.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FAE2BE23B5E30B009CAD48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECEC6B47CECA6DCA46406E44 /* Pods_Gauri_iOS_ProficiencyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FAE2C923B5E30B009CAD48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FD27A57411B6EC49C7ADDB /* Pods_Gauri_iOS_ProficiencyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52FAE2A223B5E30A009CAD48 = {
+			isa = PBXGroup;
+			children = (
+				52FAE2AD23B5E30A009CAD48 /* Gauri_iOS_Proficiency */,
+				52FAE2C423B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests */,
+				52FAE2CF23B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests */,
+				52FAE2AC23B5E30A009CAD48 /* Products */,
+				6B3127DBABC2DADB657DD72E /* Pods */,
+				CA746A4368C3B11AFA473EB5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52FAE2AC23B5E30A009CAD48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE2AB23B5E30A009CAD48 /* Gauri_iOS_Proficiency.app */,
+				52FAE2C123B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests.xctest */,
+				52FAE2CC23B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52FAE2AD23B5E30A009CAD48 /* Gauri_iOS_Proficiency */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE2AE23B5E30A009CAD48 /* AppDelegate.swift */,
+				52FAE2E023B5EBB3009CAD48 /* Supporter.swift */,
+				52FAE2F723B5EE08009CAD48 /* Model */,
+				52FAE2EA23B5ED82009CAD48 /* View */,
+				52FAE2E923B5ED7E009CAD48 /* ViewModel */,
+				52FAE2E623B5ED47009CAD48 /* WebServices */,
+				52FAE2E223B5ED15009CAD48 /* App Constants */,
+				52FAE2B723B5E30A009CAD48 /* Assets.xcassets */,
+				52FAE2FC23B5EF96009CAD48 /* avatar-placeholder.png */,
+				52FAE2BC23B5E30A009CAD48 /* Info.plist */,
+			);
+			path = Gauri_iOS_Proficiency;
+			sourceTree = "<group>";
+		};
+		52FAE2C423B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE2C523B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests.swift */,
+				52FAE2C723B5E30B009CAD48 /* Info.plist */,
+			);
+			path = Gauri_iOS_ProficiencyTests;
+			sourceTree = "<group>";
+		};
+		52FAE2CF23B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE2D023B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests.swift */,
+				52FAE2D223B5E30B009CAD48 /* Info.plist */,
+			);
+			path = Gauri_iOS_ProficiencyUITests;
+			sourceTree = "<group>";
+		};
+		52FAE2E223B5ED15009CAD48 /* App Constants */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE2E323B5ED27009CAD48 /* AppConstant.swift */,
+			);
+			path = "App Constants";
+			sourceTree = "<group>";
+		};
+		52FAE2E623B5ED47009CAD48 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE2E723B5ED64009CAD48 /* Webservice.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		52FAE2E923B5ED7E009CAD48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE2F323B5EDA2009CAD48 /* Country_InfoViewModel.swift */,
+				52FAE2F423B5EDA3009CAD48 /* Country_ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		52FAE2EA23B5ED82009CAD48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE2EB23B5ED98009CAD48 /* Country_InfoCell.swift */,
+				52FAE2ED23B5ED98009CAD48 /* Country_InfoVC-Extension+TableViewDataSource.swift */,
+				52FAE2EE23B5ED98009CAD48 /* Country_InfoVC-Extension+TableViewDelegate.swift */,
+				52FAE2EC23B5ED98009CAD48 /* Country_InfoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52FAE2F723B5EE08009CAD48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE2F923B5EE15009CAD48 /* Country_DataModel.swift */,
+				52FAE2F823B5EE15009CAD48 /* Country_InfoDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B3127DBABC2DADB657DD72E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42BB7A3913386FAE2DB1C657 /* Pods-Gauri_iOS_Proficiency.debug.xcconfig */,
+				FC321D93027576E74D848F24 /* Pods-Gauri_iOS_Proficiency.release.xcconfig */,
+				3CB1A294D741F75AAA55C4A1 /* Pods-Gauri_iOS_ProficiencyTests.debug.xcconfig */,
+				A07CF2D7C89446C5A463DC09 /* Pods-Gauri_iOS_ProficiencyTests.release.xcconfig */,
+				4AD75F971B5C19629AC2AA57 /* Pods-Gauri_iOS_ProficiencyUITests.debug.xcconfig */,
+				405084F46F91E12984E3D411 /* Pods-Gauri_iOS_ProficiencyUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA746A4368C3B11AFA473EB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8B31EB6CD359A443C669C0A /* Pods_Gauri_iOS_Proficiency.framework */,
+				64876A6870308C63AFD8F764 /* Pods_Gauri_iOS_ProficiencyTests.framework */,
+				B0A1ACCC7DEF043F7640BFA9 /* Pods_Gauri_iOS_ProficiencyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52FAE2AA23B5E30A009CAD48 /* Gauri_iOS_Proficiency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FAE2D523B5E30B009CAD48 /* Build configuration list for PBXNativeTarget "Gauri_iOS_Proficiency" */;
+			buildPhases = (
+				92501EE2CA69D575D693215E /* [CP] Check Pods Manifest.lock */,
+				52FAE2A723B5E30A009CAD48 /* Sources */,
+				52FAE2A823B5E30A009CAD48 /* Frameworks */,
+				52FAE2A923B5E30A009CAD48 /* Resources */,
+				C60AF6D51C54AD538C45C2A3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gauri_iOS_Proficiency;
+			productName = Gauri_iOS_Proficiency;
+			productReference = 52FAE2AB23B5E30A009CAD48 /* Gauri_iOS_Proficiency.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52FAE2C023B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FAE2D823B5E30B009CAD48 /* Build configuration list for PBXNativeTarget "Gauri_iOS_ProficiencyTests" */;
+			buildPhases = (
+				5AFB63CF5C14A57B6A1523BD /* [CP] Check Pods Manifest.lock */,
+				52FAE2BD23B5E30B009CAD48 /* Sources */,
+				52FAE2BE23B5E30B009CAD48 /* Frameworks */,
+				52FAE2BF23B5E30B009CAD48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FAE2C323B5E30B009CAD48 /* PBXTargetDependency */,
+			);
+			name = Gauri_iOS_ProficiencyTests;
+			productName = Gauri_iOS_ProficiencyTests;
+			productReference = 52FAE2C123B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52FAE2CB23B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FAE2DB23B5E30B009CAD48 /* Build configuration list for PBXNativeTarget "Gauri_iOS_ProficiencyUITests" */;
+			buildPhases = (
+				D1F3F9011B62F9556CD588E5 /* [CP] Check Pods Manifest.lock */,
+				52FAE2C823B5E30B009CAD48 /* Sources */,
+				52FAE2C923B5E30B009CAD48 /* Frameworks */,
+				52FAE2CA23B5E30B009CAD48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FAE2CE23B5E30B009CAD48 /* PBXTargetDependency */,
+			);
+			name = Gauri_iOS_ProficiencyUITests;
+			productName = Gauri_iOS_ProficiencyUITests;
+			productReference = 52FAE2CC23B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52FAE2A323B5E30A009CAD48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					52FAE2AA23B5E30A009CAD48 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					52FAE2C023B5E30B009CAD48 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 52FAE2AA23B5E30A009CAD48;
+					};
+					52FAE2CB23B5E30B009CAD48 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 52FAE2AA23B5E30A009CAD48;
+					};
+				};
+			};
+			buildConfigurationList = 52FAE2A623B5E30A009CAD48 /* Build configuration list for PBXProject "Gauri_iOS_Proficiency" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52FAE2A223B5E30A009CAD48;
+			productRefGroup = 52FAE2AC23B5E30A009CAD48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52FAE2AA23B5E30A009CAD48 /* Gauri_iOS_Proficiency */,
+				52FAE2C023B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests */,
+				52FAE2CB23B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52FAE2A923B5E30A009CAD48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FAE2FD23B5EF96009CAD48 /* avatar-placeholder.png in Resources */,
+				52FAE2B823B5E30A009CAD48 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FAE2BF23B5E30B009CAD48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FAE2CA23B5E30B009CAD48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AFB63CF5C14A57B6A1523BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gauri_iOS_ProficiencyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92501EE2CA69D575D693215E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gauri_iOS_Proficiency-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C60AF6D51C54AD538C45C2A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gauri_iOS_Proficiency/Pods-Gauri_iOS_Proficiency-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gauri_iOS_Proficiency/Pods-Gauri_iOS_Proficiency-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gauri_iOS_Proficiency/Pods-Gauri_iOS_Proficiency-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F3F9011B62F9556CD588E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gauri_iOS_ProficiencyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52FAE2A723B5E30A009CAD48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FAE2F123B5ED98009CAD48 /* Country_InfoVC-Extension+TableViewDataSource.swift in Sources */,
+				52FAE2F523B5EDA3009CAD48 /* Country_InfoViewModel.swift in Sources */,
+				52FAE2F023B5ED98009CAD48 /* Country_InfoViewController.swift in Sources */,
+				52FAE2FB23B5EE15009CAD48 /* Country_DataModel.swift in Sources */,
+				52FAE2E423B5ED27009CAD48 /* AppConstant.swift in Sources */,
+				52FAE2E823B5ED64009CAD48 /* Webservice.swift in Sources */,
+				52FAE2AF23B5E30A009CAD48 /* AppDelegate.swift in Sources */,
+				52FAE2F223B5ED98009CAD48 /* Country_InfoVC-Extension+TableViewDelegate.swift in Sources */,
+				52FAE2EF23B5ED98009CAD48 /* Country_InfoCell.swift in Sources */,
+				52FAE2FA23B5EE15009CAD48 /* Country_InfoDataModel.swift in Sources */,
+				52FAE2F623B5EDA3009CAD48 /* Country_ViewModel.swift in Sources */,
+				52FAE2E123B5EBB3009CAD48 /* Supporter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FAE2BD23B5E30B009CAD48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FAE2C623B5E30B009CAD48 /* Gauri_iOS_ProficiencyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FAE2C823B5E30B009CAD48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FAE2D123B5E30B009CAD48 /* Gauri_iOS_ProficiencyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52FAE2C323B5E30B009CAD48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FAE2AA23B5E30A009CAD48 /* Gauri_iOS_Proficiency */;
+			targetProxy = 52FAE2C223B5E30B009CAD48 /* PBXContainerItemProxy */;
+		};
+		52FAE2CE23B5E30B009CAD48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FAE2AA23B5E30A009CAD48 /* Gauri_iOS_Proficiency */;
+			targetProxy = 52FAE2CD23B5E30B009CAD48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52FAE2D323B5E30B009CAD48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52FAE2D423B5E30B009CAD48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52FAE2D623B5E30B009CAD48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42BB7A3913386FAE2DB1C657 /* Pods-Gauri_iOS_Proficiency.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gauri_iOS_Proficiency/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "infosys.Gauri-iOS-Proficiency";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52FAE2D723B5E30B009CAD48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC321D93027576E74D848F24 /* Pods-Gauri_iOS_Proficiency.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gauri_iOS_Proficiency/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "infosys.Gauri-iOS-Proficiency";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52FAE2D923B5E30B009CAD48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB1A294D741F75AAA55C4A1 /* Pods-Gauri_iOS_ProficiencyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gauri_iOS_ProficiencyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "infosys.Gauri-iOS-ProficiencyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gauri_iOS_Proficiency.app/Gauri_iOS_Proficiency";
+			};
+			name = Debug;
+		};
+		52FAE2DA23B5E30B009CAD48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A07CF2D7C89446C5A463DC09 /* Pods-Gauri_iOS_ProficiencyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gauri_iOS_ProficiencyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "infosys.Gauri-iOS-ProficiencyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gauri_iOS_Proficiency.app/Gauri_iOS_Proficiency";
+			};
+			name = Release;
+		};
+		52FAE2DC23B5E30B009CAD48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AD75F971B5C19629AC2AA57 /* Pods-Gauri_iOS_ProficiencyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gauri_iOS_ProficiencyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "infosys.Gauri-iOS-ProficiencyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gauri_iOS_Proficiency;
+			};
+			name = Debug;
+		};
+		52FAE2DD23B5E30B009CAD48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 405084F46F91E12984E3D411 /* Pods-Gauri_iOS_ProficiencyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gauri_iOS_ProficiencyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "infosys.Gauri-iOS-ProficiencyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gauri_iOS_Proficiency;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52FAE2A623B5E30A009CAD48 /* Build configuration list for PBXProject "Gauri_iOS_Proficiency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FAE2D323B5E30B009CAD48 /* Debug */,
+				52FAE2D423B5E30B009CAD48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FAE2D523B5E30B009CAD48 /* Build configuration list for PBXNativeTarget "Gauri_iOS_Proficiency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FAE2D623B5E30B009CAD48 /* Debug */,
+				52FAE2D723B5E30B009CAD48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FAE2D823B5E30B009CAD48 /* Build configuration list for PBXNativeTarget "Gauri_iOS_ProficiencyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FAE2D923B5E30B009CAD48 /* Debug */,
+				52FAE2DA23B5E30B009CAD48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FAE2DB23B5E30B009CAD48 /* Build configuration list for PBXNativeTarget "Gauri_iOS_ProficiencyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FAE2DC23B5E30B009CAD48 /* Debug */,
+				52FAE2DD23B5E30B009CAD48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52FAE2A323B5E30A009CAD48 /* Project object */;
+}
