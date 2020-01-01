@@ -16,6 +16,8 @@ class Gauri_iOS_ProficiencyTests: XCTestCase {
        
        var contryInfoViewModel: Country_InfoViewModel!
        var contryInfoDataModel: Country_InfoDataModel!
+    var tableVC : Country_InfoViewController!
+    
 
        override func setUp() {
            // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -53,4 +55,28 @@ class Gauri_iOS_ProficiencyTests: XCTestCase {
 
        }
 
+    func testGetFirstRow() {
+        let tableView = tableVC.tableView!
+          let indexPath0 = IndexPath(item: 0, section: 0)
+
+          let cell0 = tableView.cellForRow(at: indexPath0)
+         
+          let visibleRows = tableView.indexPathsForVisibleRows
+          XCTAssert(visibleRows != nil)   // PASSED
+          XCTAssert(tableView.indexPathsForVisibleRows!.contains(indexPath0)) // PASSED
+         
+          XCTAssert(cell0 != nil)     // FAILED
+      }
+     
+      func testGetFirstRowDataSource() {
+          let tableView = tableVC.tableView!
+          let indexPath0 = IndexPath(item: 0, section: 0)
+         
+          // This won't check for cell visibility.
+          let cell0 = tableVC.tableView(tableView, cellForRowAt: indexPath0)
+         
+          let visibleRows = tableView.indexPathsForVisibleRows
+          XCTAssert(visibleRows != nil)           // PASSED
+          XCTAssert(tableView.indexPathsForVisibleRows!.contains(indexPath0))     // PASSED
+      }
 }

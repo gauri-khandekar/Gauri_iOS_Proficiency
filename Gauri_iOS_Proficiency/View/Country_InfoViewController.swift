@@ -42,7 +42,7 @@ class Country_InfoViewController: UIViewController {
     
         self.fetchData()
         tableView?.rowHeight = UITableView.automaticDimension
-        tableView?.estimatedRowHeight = 65.0
+        tableView?.estimatedRowHeight = 75.0
     }
     
     func setupViews() {
@@ -56,7 +56,7 @@ class Country_InfoViewController: UIViewController {
         tableView?.clipsToBounds = true
         tableView?.separatorStyle = UITableViewCell.SeparatorStyle.singleLine
         tableView?.rowHeight = UITableView.automaticDimension
-        tableView?.estimatedRowHeight = 44.0
+        tableView?.estimatedRowHeight = 54.0
         
         tableView?.register(Country_InfoCell.self, forCellReuseIdentifier: "Country_InfoCellID")
         tableView?.accessibilityIdentifier = "table--countryInfoTableView"
@@ -87,7 +87,7 @@ class Country_InfoViewController: UIViewController {
                 self.countryData = countryData
             }
         } else {
-            showAlert(title: "No Internet Connection", message: "Please check your internet connection")
+            showAlert(title: "Opps!!! Lost Internet Connection !", message: "Please check your Connectivity !!!")
         }
     }
     
