@@ -42,7 +42,7 @@ class Country_InfoViewController: UIViewController {
     
         self.fetchData()
         tableView?.rowHeight = UITableView.automaticDimension
-        tableView?.estimatedRowHeight = 75.0
+        tableView?.estimatedRowHeight = 60.0
     }
     
     func setupViews() {
@@ -56,7 +56,7 @@ class Country_InfoViewController: UIViewController {
         tableView?.clipsToBounds = true
         tableView?.separatorStyle = UITableViewCell.SeparatorStyle.singleLine
         tableView?.rowHeight = UITableView.automaticDimension
-        tableView?.estimatedRowHeight = 54.0
+        tableView?.estimatedRowHeight = 40.0
         
         tableView?.register(Country_InfoCell.self, forCellReuseIdentifier: "Country_InfoCellID")
         tableView?.accessibilityIdentifier = "table--countryInfoTableView"

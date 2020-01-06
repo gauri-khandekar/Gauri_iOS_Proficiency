@@ -20,7 +20,7 @@ class Country_InfoCell: UITableViewCell {
             lblTitle.text = Country_InfoViewModel?.titleText
             lblDescription.attributedText = Country_InfoViewModel?.desctiptionText
             imgRefrenceView.pin_updateWithProgress = true
-            imgRefrenceView.pin_setPlaceholder(with: UIImage.init(named: "placeholderImage"))
+            imgRefrenceView.pin_setPlaceholder(with: UIImage.init(named: placeholderImage))
             if let url = Country_InfoViewModel?.imageHrefUrl {
                 imgRefrenceView.pin_setImage(from: url, completion: { (_) in
                     self.layoutIfNeeded()
@@ -56,7 +56,7 @@ class Country_InfoCell: UITableViewCell {
         imgRefrenceView = UIImageView.init(frame: .zero)
         imgRefrenceView.clipsToBounds = true
         imgRefrenceView.contentMode = .scaleAspectFit
-        imgRefrenceView?.image = UIImage.init(named: "PlaceholderImg")
+        imgRefrenceView?.image = UIImage.init(named: placeholderImage)
         contentBackgroundView.addSubview(imgRefrenceView)
         
         lblDescription = UILabel(frame: .zero)
