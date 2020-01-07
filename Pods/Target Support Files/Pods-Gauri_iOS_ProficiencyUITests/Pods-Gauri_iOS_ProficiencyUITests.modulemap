@@ -1,0 +1,6 @@
+framework module Pods_Gauri_iOS_ProficiencyUITests {
+  umbrella header "Pods-Gauri_iOS_ProficiencyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
