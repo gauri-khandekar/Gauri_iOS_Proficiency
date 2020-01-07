@@ -9,5 +9,4 @@ import Foundation
 
 let countryInfoCellId = "Country_InfoCellID"
 let placeholderImage = "avatar-placeholder"
-
 let webserviceURL = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"

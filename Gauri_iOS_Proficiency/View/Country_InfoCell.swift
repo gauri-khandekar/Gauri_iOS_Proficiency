@@ -10,6 +10,7 @@ import UIKit
 
 class Country_InfoCell: UITableViewCell {
     
+    //Contry cell contains backround view, lable_Title, label_Desciption and image VIew.
     var contentBackgroundView: UIView!
     var lblTitle: UILabel!
     var lblDescription: UILabel!

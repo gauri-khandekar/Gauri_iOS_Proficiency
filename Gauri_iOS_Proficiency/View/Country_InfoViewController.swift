@@ -13,10 +13,15 @@ import Alamofire
 
 class Country_InfoViewController: UIViewController {
     
+    //ViewController Initialization with different required components.
+    
+    //The Main Table View which will hold the whole JSON in Custom Cells.
     var tableView: UITableView?
+    //The Refresh control handles the data reloading.
     var refreshControl: UIRefreshControl?
-
+    //View Model Class object is initialized with country view model.
     var countryViewModel: Country_ViewModel?
+    //Data Model class Obejct is initialized.
     var countryData: Country_DataModel? {
         
         didSet {
@@ -42,9 +47,10 @@ class Country_InfoViewController: UIViewController {
     
         self.fetchData()
         tableView?.rowHeight = UITableView.automaticDimension
-        tableView?.estimatedRowHeight = 60.0
+        tableView?.estimatedRowHeight = 40.0
     }
     
+    //This method sets up the view with components and their properties.
     func setupViews() {
          view.backgroundColor = .blue
         
@@ -58,6 +64,7 @@ class Country_InfoViewController: UIViewController {
         tableView?.rowHeight = UITableView.automaticDimension
         tableView?.estimatedRowHeight = 40.0
         
+        //Table view registry with custom cells
         tableView?.register(Country_InfoCell.self, forCellReuseIdentifier: "Country_InfoCellID")
         tableView?.accessibilityIdentifier = "table--countryInfoTableView"
 
@@ -75,7 +82,7 @@ class Country_InfoViewController: UIViewController {
             make.edges.equalTo(view); // to make table size same as view
         }
     }
-
+    //Function retrieves data from web service URL.
     @objc func fetchData() {
         if isConnectedToInternet() == true {
             Webservice.shared.getData(with: webserviceURL) { (countryData, error) in
@@ -95,4 +102,15 @@ class Country_InfoViewController: UIViewController {
         self.title = self.countryViewModel?.title
         self.tableView?.reloadData()
     }
+    
+    func reFineData()
+    {
+        var infoArray = self.countryData?.info
+        for (title,description,imageHref) in infoArray{
+            
+    
+        }
+    }
+
 }
+
