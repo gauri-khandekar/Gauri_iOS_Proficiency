@@ -103,14 +103,15 @@ class Country_InfoViewController: UIViewController {
         self.tableView?.reloadData()
     }
     
-    func reFineData()
-    {
-        var infoArray = self.countryData?.info
-        for (title,description,imageHref) in infoArray{
-            
-    
-        }
-    }
+    // To check whether any object contains nil.
+//    func reFineData()
+//    {
+//        var infoArray = self.countryData?.info
+//        for (title,description,imageHref) in infoArray{
+//
+//
+//        }
+//    }
 
 }
 
