@@ -47,7 +47,7 @@ class Country_InfoViewController: UIViewController {
     
         self.fetchData()
         tableView?.rowHeight = UITableView.automaticDimension
-        tableView?.estimatedRowHeight = 40.0
+        //tableView?.estimatedRowHeight = 40.0
     }
     
     //This method sets up the view with components and their properties.
@@ -62,7 +62,7 @@ class Country_InfoViewController: UIViewController {
         tableView?.clipsToBounds = true
         tableView?.separatorStyle = UITableViewCell.SeparatorStyle.singleLine
         tableView?.rowHeight = UITableView.automaticDimension
-        tableView?.estimatedRowHeight = 40.0
+        //tableView?.estimatedRowHeight = 65.0
         
         //Table view registry with custom cells
         tableView?.register(Country_InfoCell.self, forCellReuseIdentifier: "Country_InfoCellID")
@@ -92,6 +92,7 @@ class Country_InfoViewController: UIViewController {
                 }
                 guard let countryData = countryData else {return}
                 self.countryData = countryData
+                self.tableView?.reloadData()
             }
         } else {
             showAlert(title: "Opps!!! Lost Internet Connection !", message: "Please check your Connectivity !!!")

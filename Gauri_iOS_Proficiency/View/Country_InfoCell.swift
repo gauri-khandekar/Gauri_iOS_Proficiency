@@ -48,13 +48,13 @@ class Country_InfoCell: UITableViewCell {
         contentView.addSubview(contentBackgroundView)
         
         lblTitle = UILabel(frame: .zero)
-        lblTitle.font = UIFont.boldSystemFont(ofSize: 20.0)
-        lblTitle.textColor = .black
+        lblTitle.font = UIFont.boldSystemFont(ofSize: 25.0)
+        lblTitle.textColor = .orange
         lblTitle.clipsToBounds = true
         lblTitle.numberOfLines = 0
         contentBackgroundView.addSubview(lblTitle)
         
-        imgRefrenceView = UIImageView.init(frame: .zero)
+        imgRefrenceView = UIImageView.init(frame: .init(x: 0.0, y: 0.0, width: 50, height: 50))
         imgRefrenceView.clipsToBounds = true
         imgRefrenceView.contentMode = .scaleAspectFit
         imgRefrenceView?.image = UIImage.init(named: placeholderImage)
@@ -74,22 +74,23 @@ class Country_InfoCell: UITableViewCell {
             make.edges.equalTo(contentView)
         }
 
-        lblTitle?.snp.makeConstraints { (make) -> Void in
-            make.left.equalTo(contentBackgroundView).offset(0)
-            make.right.equalTo(contentBackgroundView).offset(0)
+        imgRefrenceView?.snp.makeConstraints { (make) -> Void in
+            make.left.equalTo(contentBackgroundView).offset(10)
+            make.right.equalTo(contentBackgroundView).offset(-10)
             make.top.equalTo(contentBackgroundView).offset(5)
+           // make.bottom.equalTo(lblTitle).offset(5)
         }
         
-        imgRefrenceView?.snp.makeConstraints { (make) -> Void in
-            make.left.equalTo(lblTitle)
-            make.right.equalTo(lblTitle)
-            make.top.equalTo(lblTitle.snp.bottom).offset(10)
+        lblTitle?.snp.makeConstraints { (make) -> Void in
+            make.left.equalTo(imgRefrenceView)
+            make.right.equalTo(imgRefrenceView).offset(0)
+            make.top.equalTo(imgRefrenceView.snp.bottom).offset(10)
         }
 
         lblDescription?.snp.makeConstraints { (make) -> Void in
-            make.left.equalTo(lblTitle)
+            make.left.equalTo(imgRefrenceView)
             make.right.equalTo(lblTitle)
-            make.top.equalTo(imgRefrenceView.snp.bottom).offset(10)
+            make.top.equalTo(lblTitle.snp.bottom).offset(5)
             make.bottom.equalTo(contentBackgroundView).offset(-10)
         }
     }

@@ -13,13 +13,13 @@ class Country_InfoViewModel: NSObject {
     var countryInfoData: Country_InfoDataModel?
     
     var titleText: String {
-        return countryInfoData?.title ?? "No Title"
+        return countryInfoData!.title ?? "No Title"
     }
     
     var desctiptionText: NSAttributedString {
         
-        let descriptionString = countryInfoData?.description ?? "No Description"
-        let attributes: [NSAttributedString.Key: Any] = [ .font: UIFont.systemFont(ofSize: 18.0), .foregroundColor: UIColor.black]
+        let descriptionString = countryInfoData?.description ?? "No Extra Information Available on this" //?? "No Description"
+        let attributes: [NSAttributedString.Key: Any] = [ .font: UIFont.italicSystemFont(ofSize: 16.0), .foregroundColor: UIColor.darkGray]
         
         let descriptionAttributedString =  NSMutableAttributedString.init(string: descriptionString, attributes: attributes)
         
