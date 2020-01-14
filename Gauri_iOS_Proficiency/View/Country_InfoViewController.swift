@@ -18,6 +18,8 @@ class Country_InfoViewController: UIViewController {
     //The Main Table View which will hold the whole JSON in Custom Cells.
     var tableView: UITableView?
     //The Refresh control handles the data reloading.
+    
+    var waitLabel : UILabel?
     var refreshControl: UIRefreshControl?
     //View Model Class object is initialized with country view model.
     var countryViewModel: Country_ViewModel?
@@ -52,7 +54,14 @@ class Country_InfoViewController: UIViewController {
     
     //This method sets up the view with components and their properties.
     func setupViews() {
-         view.backgroundColor = .blue
+          view.backgroundColor = .white
+                
+                waitLabel = UILabel.init(frame: view.bounds)
+               // waitLabel?.backgroundColor = .
+                waitLabel?.text = "Please Wait ..."
+                waitLabel?.isHidden = false
+                waitLabel?.textAlignment = .center
+                self.view .addSubview(waitLabel!)
         
         //TableView UI
         tableView = UITableView.init(frame: view.bounds)
@@ -73,6 +82,7 @@ class Country_InfoViewController: UIViewController {
         self.refreshControl?.addTarget(self, action: #selector(Country_InfoViewController.fetchData), for: .valueChanged)
         self.tableView?.addSubview(refreshControl!)
         self.tableView?.allowsSelection = false
+        self.tableView?.isHidden = true
         
         setupLayout()
     }
@@ -93,6 +103,8 @@ class Country_InfoViewController: UIViewController {
                 guard let countryData = countryData else {return}
                 self.countryData = countryData
                 self.tableView?.reloadData()
+                self.tableView?.isHidden = false
+                self.waitLabel?.isHidden = true
             }
         } else {
             showAlert(title: "Opps!!! Lost Internet Connection !", message: "Please check your Connectivity !!!")
